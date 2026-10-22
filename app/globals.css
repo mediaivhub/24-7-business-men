@@ -569,3 +569,16 @@ footer.site-foot{background:var(--bg-soft);color:var(--muted);border-top:1px sol
 .svc-tabs #tabVisa[aria-selected="true"],.svc-band .svc-tabs #tabVisa[aria-selected="true"]{background:var(--orange-grad);color:#FFFFFF}
 .division-title i,.col-top i{background:var(--gold-grad);color:#2A1F00}
 .division-title.visa i,.col.visa .col-top i{background:var(--orange-grad);color:#FFFFFF}
+
+/* Phones: service cards as a 2-column grid (replaces the sideways swipe rows) */
+@media(max-width:700px){
+  .scards{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow:visible;scroll-snap-type:none;margin-right:0;padding:0}
+  .scard{flex:none;min-height:0;padding:20px 12px 18px;align-items:center;justify-content:flex-start;text-align:center;gap:10px}
+  .scard:last-child:nth-child(odd){grid-column:1 / -1}
+  .scard i{margin:0;width:46px;height:46px}
+  .scard b{font-size:.98rem;line-height:1.25}
+  .scard span,.scard em{display:none}
+  .card-group{margin-top:32px}
+  .svc-band .card-group h4::after{content:"";flex:1;height:1px;background:var(--rule)}
+}
+@media(hover:none){.scard:hover{transform:none}.feature:hover::after{transform:none}}
