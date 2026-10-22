@@ -552,3 +552,20 @@ footer.site-foot{background:var(--bg-soft);color:var(--muted);border-top:1px sol
 .foot-grid a:hover{color:var(--orange)}
 .foot-bottom{border-top-color:var(--rule);color:var(--muted)}
 .row span:last-child{white-space:nowrap}
+
+/* Division colours: Property Trustee = gold gradient, Golden Visa = coral gradient */
+.svc-group.trustee{background:var(--gold-grad);color:#2A1F00}
+.svc-group.trustee h2{color:#2A1F00}
+.svc-group.visa{background:var(--orange-grad);color:#FFFFFF}
+.svc-group.visa h2{color:#FFFFFF}
+.svc-group.visa a{background:transparent}
+.svc-group.trustee a:hover{background:rgba(255,255,255,.3)}
+.svc-group.visa a:hover{background:rgba(255,255,255,.14)}
+@media(max-width:700px){
+  .svc-group.trustee a{background:rgba(255,255,255,.25)}
+  .svc-group.visa a{background:rgba(255,255,255,.12)}
+}
+.svc-tabs #tabTrustee[aria-selected="true"],.svc-band .svc-tabs #tabTrustee[aria-selected="true"]{background:var(--gold-grad);color:#2A1F00}
+.svc-tabs #tabVisa[aria-selected="true"],.svc-band .svc-tabs #tabVisa[aria-selected="true"]{background:var(--orange-grad);color:#FFFFFF}
+.division-title i,.col-top i{background:var(--gold-grad);color:#2A1F00}
+.division-title.visa i,.col.visa .col-top i{background:var(--orange-grad);color:#FFFFFF}
