@@ -23,6 +23,9 @@ export const BRAND = "24/7 Businessmen";
 export const PHONE = "+971 4 123 4567";
 export const WHATSAPP = "+971 50 123 4567";
 export const EMAIL = "hello@247businessmen.ae";
+// WhatsApp chat link with a prefilled message (number is a placeholder).
+export const waLink = (text: string) =>
+  `https://wa.me/${WHATSAPP.replace(/[^\d]/g, "")}?text=${encodeURIComponent(text)}`;
 export const ADDRESS = "Office 1204, Bay Square Building 5, Business Bay, Dubai";
 
 export const DIVISIONS: Record<Division, { name: string; icon: string; blurb: string }> = {

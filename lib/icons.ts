@@ -20,5 +20,10 @@ export const ICONS: Record<string, string> = {
   "sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5\"/>",
   "plane": "<path d=\"M10 14l-7-3 1-2 9 1 5-6c1-1 3 0 2 2l-4 6 1 9-2 1-3-7-3 3v3l-2 1-1-4-4-1 1-2h3z\"/>",
   "close": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M9 9l6 6M15 9l-6 6\"/>",
-  "sofa": "<path d=\"M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M3 11h18v6H3zM5 17v3M19 17v3\"/>"
+  "sofa": "<path d=\"M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M3 11h18v6H3zM5 17v3M19 17v3\"/>",
+  "whatsapp": "<path d=\"M4 20l1.3-4A8 8 0 1 1 8.4 19z\"/><path d=\"M9 9.5c0 3 2.5 5.5 5.5 5.5l1.3-1.3-2-1-1 .8c-1-.4-1.9-1.3-2.3-2.3l.8-1-1-2z\"/>",
+  "search": "<circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M20 20l-4-4\"/>",
+  "grid": "<rect x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/>",
+  "calendar": "<rect x=\"4\" y=\"5\" width=\"16\" height=\"16\" rx=\"2\"/><path d=\"M4 10h16M9 3v4M15 3v4\"/>",
+  "check": "<path d=\"M5 12l5 5 9-10\"/>"
 };

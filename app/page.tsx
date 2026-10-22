@@ -1,8 +1,10 @@
 import Link from "next/link";
 import ContactBlock from "@/components/ContactBlock";
-import Estimator from "@/components/Estimator";
+import EligibilityQuiz from "@/components/EligibilityQuiz";
 import HeroVideo from "@/components/HeroVideo";
 import Icon from "@/components/Icon";
+import OpenNow from "@/components/OpenNow";
+import ServiceSearch from "@/components/ServiceSearch";
 import ServiceShowcase from "@/components/ServiceShowcase";
 import { BRAND, SERVICES, bySlug } from "@/lib/services";
 
@@ -28,6 +30,7 @@ export default function Home() {
         <HeroVideo />
         <div className="wrap">
           <div className="hero-copy">
+            <OpenNow className="in-hero" />
             <h1>Property &amp; residency, around the clock</h1>
             <div className="actions">
               <a className="btn btn-gold" href="#contact">Book an appointment</a>
@@ -35,6 +38,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="wrap">
+        <ServiceSearch />
       </div>
 
       <div className="wrap">
@@ -93,18 +100,18 @@ export default function Home() {
         <div className="wrap">
           <div className="bridge">
             <div>
-              <p className="kicker">Transfer to residency</p>
+              <p className="kicker">Golden Visa check · 30 seconds</p>
               <h2 style={{ marginTop: 12 }}>
-                Bought for AED 2M or more? Your title deed is <em>your visa application.</em>
+                Does your property qualify you for <em>10 years in the UAE?</em>
               </h2>
-              <p>Enter the purchase price to estimate your transfer-day costs and check Golden Visa eligibility.</p>
+              <p>Answer three quick questions to see if you qualify and what you will pay on transfer day.</p>
               <ol>
                 <li>Sign and transfer at our trustee desk, day or night</li>
                 <li>Receive your title deed the same day</li>
                 <li>We file your Golden Visa with that deed</li>
               </ol>
             </div>
-            <Estimator />
+            <EligibilityQuiz />
           </div>
         </div>
       </section>

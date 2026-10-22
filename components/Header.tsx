@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import OpenNow from "./OpenNow";
 import { BRAND, bySlug, divisionOf } from "@/lib/services";
 
 export default function Header() {
@@ -56,6 +57,7 @@ export default function Header() {
           </ul>
         </nav>
         <div className="head-right">
+          <OpenNow className="in-header" />
           <Link className="btn btn-gold" href="/#contact">Book a video call</Link>
           <button
             className="menu-btn"

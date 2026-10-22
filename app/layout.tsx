@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BottomBar from "@/components/BottomBar";
 import "./globals.css";
 
 // Type follows amer247.com: Outfit for headings, Inter for body text.
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
+        <BottomBar />
       </body>
     </html>
   );
