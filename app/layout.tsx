@@ -1,19 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Hanken_Grotesk, Spectral } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const serif = Spectral({
+// Type follows amer247.com: Outfit for headings, Inter for body text.
+const heading = Outfit({
   subsets: ["latin"],
-  weight: ["300", "400"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-heading",
 });
-const sans = Hanken_Grotesk({
+const body = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en" className={`${heading.variable} ${body.variable}`}>
       <body>
         <Header />
         {children}

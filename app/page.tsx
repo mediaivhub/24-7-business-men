@@ -93,7 +93,7 @@ export default function Home() {
         <div className="wrap">
           <div className="bridge">
             <div>
-              <p className="kicker" style={{ color: "#E2C48E" }}>Transfer to residency</p>
+              <p className="kicker">Transfer to residency</p>
               <h2 style={{ marginTop: 12 }}>
                 Bought for AED 2M or more? Your title deed is <em>your visa application.</em>
               </h2>
