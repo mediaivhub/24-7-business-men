@@ -13,9 +13,12 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   // On the home page the header floats over the hero video until the page scrolls.
+  // On phones it stays hidden until the video has scrolled almost out of view.
   useEffect(() => {
     if (!home) return;
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const phone = window.matchMedia("(max-width: 700px)");
+    const onScroll = () =>
+      setScrolled(window.scrollY > (phone.matches ? window.innerHeight - 90 : 40));
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);

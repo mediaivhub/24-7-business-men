@@ -732,3 +732,22 @@ h1,h2,h3,.feature-title{letter-spacing:-.03em}
   .dock-book:active{transform:scale(.95)}
 }
 @media(prefers-reduced-motion:reduce){.dock,.dock-tabs a,.dock-tabs .lbl{transition:none}.dock-live{animation:none}}
+
+/* Dock: plain white */
+@media(max-width:700px){
+  .dock-tabs{background:rgba(255,255,255,.94);border-color:rgba(15,23,42,.08);box-shadow:0 18px 40px -14px rgba(15,23,42,.35)}
+  .dock-tabs a{color:#64748B}
+  .dock-tabs a[aria-current]{color:#FFFFFF}
+  .dock-live{box-shadow:0 0 0 2px #FFFFFF;background:#1BA39C}
+}
+
+/* Phones: the hero video fills the whole screen, edge to edge; only the dock floats over it */
+@media(max-width:700px){
+  header.overlay{transition:transform .35s cubic-bezier(.2,.7,.1,1),opacity .3s,background .3s}
+  header.overlay:not(.scrolled){transform:translateY(-110%);opacity:0;pointer-events:none}
+  body:has(header.overlay:not(.scrolled))::before{background:transparent}
+  header.overlay ~ main .hero{min-height:100svh;margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
+  header.overlay ~ main .hero-copy{padding-block:72px 120px}
+  .hero .vid-toggle{bottom:auto;top:calc(16px + env(safe-area-inset-top,0px));left:auto;right:max(16px,env(safe-area-inset-right,0px));padding:6px 12px;font-size:.72rem}
+  .search{margin-top:28px}
+}
