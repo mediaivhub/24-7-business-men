@@ -1,0 +1,24 @@
+// Inline SVG paths for service icons (24x24, stroked).
+export const ICONS: Record<string, string> = {
+  "home": "<path d=\"M4 21V9l8-6 8 6v12M9 21v-6h6v6\"/>",
+  "card": "<rect x=\"3\" y=\"6\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M3 10h18M7 15h4\"/>",
+  "file": "<path d=\"M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5\"/>",
+  "gift": "<rect x=\"4\" y=\"9\" width=\"16\" height=\"12\" rx=\"1\"/><path d=\"M12 9v12M3 9h18M12 9c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1\"/>",
+  "passport": "<rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/><path d=\"M9 16h6\"/>",
+  "family": "<circle cx=\"8\" cy=\"8\" r=\"3\"/><circle cx=\"16\" cy=\"9\" r=\"2.5\"/><path d=\"M3 20c0-3 2.5-5 5-5s5 2 5 5M13 20c0-2.5 1.5-4 3-4s4 1.5 4 4\"/>",
+  "heart": "<path d=\"M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z\"/>",
+  "scale": "<path d=\"M12 3v18M5 8h14M7 8l-3 7h6zM17 8l-3 7h6z\"/>",
+  "lock": "<rect x=\"5\" y=\"11\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/>",
+  "building": "<path d=\"M4 21V5l8-2v18M12 21V9l8 2v10M7 8h2M7 12h2M7 16h2M15 13h2M15 17h2M2 21h20\"/>",
+  "map": "<path d=\"M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14\"/>",
+  "user": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c0-4 3.6-7 8-7s8 3 8 7\"/>",
+  "merge": "<rect x=\"3\" y=\"7\" width=\"8\" height=\"10\" rx=\"1\"/><rect x=\"13\" y=\"7\" width=\"8\" height=\"10\" rx=\"1\"/><path d=\"M11 12h2\"/>",
+  "mail": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 7l9 6 9-6\"/>",
+  "pen": "<path d=\"M4 20l4-1 11-11-3-3L5 16zM14 6l3 3\"/>",
+  "globe": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18\"/>",
+  "car": "<path d=\"M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v2M17 19v2\"/><circle cx=\"7.5\" cy=\"13.5\" r=\".5\"/><circle cx=\"16.5\" cy=\"13.5\" r=\".5\"/>",
+  "sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5\"/>",
+  "plane": "<path d=\"M10 14l-7-3 1-2 9 1 5-6c1-1 3 0 2 2l-4 6 1 9-2 1-3-7-3 3v3l-2 1-1-4-4-1 1-2h3z\"/>",
+  "close": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M9 9l6 6M15 9l-6 6\"/>",
+  "sofa": "<path d=\"M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M3 11h18v6H3zM5 17v3M19 17v3\"/>"
+};
