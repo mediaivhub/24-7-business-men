@@ -26,7 +26,8 @@ export const EMAIL = "hello@247businessmen.ae";
 // WhatsApp chat link with a prefilled message (number is a placeholder).
 export const waLink = (text: string) =>
   `https://wa.me/${WHATSAPP.replace(/[^\d]/g, "")}?text=${encodeURIComponent(text)}`;
-export const ADDRESS = "Office 1204, Bay Square Building 5, Business Bay, Dubai";
+export const ADDRESS =
+  "24 Seven Government Transaction Center LLC, 17 A Street, Al Khabaisi (behind Abu Baker Al Siddique Metro Station), Deira, Dubai, UAE. P.O. Box 81143";
 
 export const DIVISIONS: Record<Division, { name: string; icon: string; blurb: string }> = {
   trustee: { name: "Property Trustee", icon: "home", blurb: "A registration trustee office handling Dubai Land Department transactions, day and night." },
