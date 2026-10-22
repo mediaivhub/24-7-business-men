@@ -751,3 +751,14 @@ h1,h2,h3,.feature-title{letter-spacing:-.03em}
   .hero .vid-toggle{bottom:auto;top:calc(16px + env(safe-area-inset-top,0px));left:auto;right:max(16px,env(safe-area-inset-right,0px));padding:6px 12px;font-size:.72rem}
   .search{margin-top:28px}
 }
+
+/* Phones over the hero: logo only, top left (navigation lives in the dock) */
+@media(max-width:700px){
+  header.overlay:not(.scrolled){transform:none;opacity:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.35),transparent)}
+  header.overlay:not(.scrolled) .logo{pointer-events:auto}
+  header.overlay:not(.scrolled) .head-right{visibility:hidden}
+  header.overlay .logo-text{text-shadow:0 1px 8px rgba(0,0,0,.25)}
+  header.overlay.scrolled .logo-text{text-shadow:none}
+  .hero .vid-toggle{top:calc(22px + env(safe-area-inset-top,0px))}
+}
+@media(max-width:700px){header.overlay:not(.scrolled){border-bottom:0}}
