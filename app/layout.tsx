@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { DM_Sans, Sora } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomBar from "@/components/BottomBar";
 import "./globals.css";
 
-// Type follows amer247.com: Outfit for headings, Inter for body text.
-const heading = Outfit({
+// Sora for headings, DM Sans for body text.
+const heading = Sora({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
   variable: "--font-heading",
 });
-const body = Inter({
+const body = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
